@@ -1,0 +1,154 @@
+.container {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 90px;
+  height: 39px;
+}
+
+.title {
+  height: 60px;
+  margin: 40px 0 16px;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 60px;
+}
+
+.title > span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.description {
+  font-weight: 300;
+  color: var(--very-dark-blue);
+}
+
+.notify {
+  width: 637px;
+  height: 56px;
+  margin: 40px 0 94px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.email {
+  width: 421px;
+  height: 100%;
+  padding: 18px 30px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+  line-height: 20px;
+  outline: none;
+  border: 1px solid var(--pale-blue);
+  border-radius: 28px;
+  box-shadow: 0 0 7px 3px hsla(0, 0%, 0%, 0.0001);
+}
+
+.email::placeholder {
+  color: #b8c7ed;
+}
+
+.button {
+  width: 200px;
+  height: 100%;
+  background: var(--blue);
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0 5px 10px 2px hsla(223, 87%, 63%, 0.2304);
+  cursor: pointer;
+  position: relative;
+}
+
+.button:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 100%, 0.204);
+  border-radius: 28px;
+}
+
+.email-error {
+  border: 1px solid var(--light-red);
+}
+
+.email-error::placeholder {
+  color: var(--very-dark-blue);
+  opacity: 1;
+}
+
+.text-error {
+  position: absolute;
+  left: 30px;
+  bottom: -25px;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--light-red);
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+
+.image {
+  width: 100%;
+  height: 383px;
+}
+
+.footer {
+  width: 204px;
+  height: 71px;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact {
+  width: 120px;
+  height: 31px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon > path {
+  stroke: var(--blue);
+}
+
+.icon > g > rect {
+  fill: var(--blue);
+}
+
+.icon:hover {
+  cursor: pointer;
+  fill: var(--blue);
+}
+
+.icon:hover > path {
+  stroke: #ffffff;
+}
+
+.icon:hover > g > rect {
+  fill: #ffffff;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--gray);
+}
