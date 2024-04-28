@@ -152,3 +152,82 @@
   font-weight: 300;
   color: var(--gray);
 }
+
+@media screen and (max-width: 660px) {
+  .container {
+    width: 320px;
+    height: 100%;
+  }
+
+  .logo {
+    width: 56px;
+    height: 24px;
+  }
+
+  .title {
+    height: 32px;
+    margin: 32px 0 15px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .notify {
+    width: 282px;
+    height: auto;
+    margin: 0;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 10px;
+  }
+
+  .email {
+    width: 100%;
+    height: 40px;
+    margin-top: 32px;
+    padding: 10px 32px;
+    font-size: 12px;
+  }
+
+  .button {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 72px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .email-error {
+    margin-bottom: 32px;
+  }
+
+  .email-error + .button {
+    margin-bottom: 40px;
+  }
+
+  .text-error {
+    top: 74px;
+    left: 54px;
+    bottom: auto;
+    font-size: 10px;
+    letter-spacing: 0.13px;
+  }
+
+  .image {
+    height: 192px;
+  }
+
+  .footer {
+    width: 170px;
+    height: 70px;
+    margin-top: 120px;
+    gap: 27px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}

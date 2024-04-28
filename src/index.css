@@ -32,3 +32,10 @@ body {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 660px) {
+  body {
+    height: 812px;
+    padding: 81px 36px 37px;
+  }
+}
